@@ -320,6 +320,12 @@ __Discussion Points__
 ## Additional Code Smells
 
 #### Breaking the Law of Demeter
+The Law of Demeter (LoD) is a concept that is deeply rooted within the OOP community. From a high level it basically is a law that if you created an object should be agnostic to the other objects around it and it should be self sustaining. The methods on an object may only call methods of:
+   1. The object itself.
+   2. An argument of the method.
+   3. Any object created within the method.
+   4. Any direct properties/fields of the object.
+
 
 #### Callback Hell
 
